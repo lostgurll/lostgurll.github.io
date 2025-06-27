@@ -2,93 +2,126 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Anjali Garkoti – Physics Student</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anjali Garkoti</title>
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
+    * {
       margin: 0;
       padding: 0;
-      background: linear-gradient(to right, #f0f8ff, #e0f7fa);
-      color: #333;
+      box-sizing: border-box;
     }
-    header {
-      background-color: #0077cc;
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: black;
       color: white;
-      padding: 40px 20px;
-      text-align: center;
+      background-image: url('https://i.imgur.com/mT1d8Z0.png'); /* White doodle stars */
+      background-repeat: repeat;
+      background-size: 250px;
+      height: 100vh;
+      display: flex;
+      flex-direction: row;
+      padding: 30px;
     }
-    header h1 {
-      margin: 0;
+
+    .left {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+    }
+
+    .left h1 {
       font-size: 2.5rem;
+      margin-bottom: 10px;
     }
-    header p {
-      font-size: 1.2rem;
+
+    .left a {
+      color: #ff69b4;
+      text-decoration: none;
+      font-size: 1.1rem;
     }
-    main {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: auto;
+
+    .left a:hover {
+      text-decoration: underline;
     }
-    section {
-      margin-bottom: 40px;
+
+    .right {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      padding: 20px;
     }
-    h2 {
-      color: #0077cc;
+
+    .section {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 10px;
     }
-    .project-placeholder {
-      font-style: italic;
-      color: #666;
+
+    .section h2 {
+      color: #ff69b4;
+      margin-bottom: 10px;
     }
+
+    .section p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
     .contact a {
       display: inline-block;
       margin-top: 10px;
-      padding: 10px 20px;
-      background-color: #0077cc;
+      padding: 10px 16px;
+      background-color: #ff69b4;
       color: white;
       text-decoration: none;
       border-radius: 5px;
+      font-size: 0.95rem;
     }
+
     .contact a:hover {
-      background-color: #005fa3;
+      background-color: #e60073;
     }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #f0f0f0;
-      font-size: 0.9rem;
-      color: #555;
+
+    @media screen and (max-width: 768px) {
+      body {
+        flex-direction: column;
+        height: auto;
+      }
+      .left, .right {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+      }
     }
   </style>
 </head>
 <body>
-
-  <header>
+  <div class="left">
     <h1>Anjali Garkoti</h1>
-    <p>Physics Honours Student | University of Delhi</p>
-  </header>
+    <a href="https://github.com/lostgurl" target="_blank">my GitHub profile</a>
+  </div>
 
-  <main>
-    <section>
+  <div class="right">
+    <div class="section">
       <h2>About Me</h2>
-      <p>Hi! I'm Anjali, a B.Sc. (Hons) Physics student at the University of Delhi. I'm just getting started with coding, GitHub, and tech in general. I'm excited to build projects, learn new things, and grow as a developer!</p>
-    </section>
+      <p>Hi! I’m Anjali, a physics major student exploring the world of code and web development. This space is where I’ll share my learning journey, projects, and ideas!</p>
+    </div>
 
-    <section>
-      <h2>Projects</h2>
-      <p class="project-placeholder">No projects added yet. But stay tuned—I'll keep updating this section as I start building!</p>
-    </section>
+    <div class="section">
+      <h2>Blog</h2>
+      <p>Coming soon: I’ll be writing about what I’m learning — from HTML basics to fun physics facts.</p>
+    </div>
 
-    <section class="contact">
+    <div class="section contact">
       <h2>Contact Me</h2>
-      <p>Feel free to reach out via email if you’d like to connect or collaborate!</p>
+      <p>Want to connect or collaborate? Feel free to drop me an email.</p>
       <a href="mailto:garkotianjali5@gmail.com">📧 Email Me</a>
-    </section>
-  </main>
-
-  <footer>
-    &copy; 2025 Anjali Garkoti • Built with ❤️ using GitHub Pages
-  </footer>
-
+    </div>
+  </div>
 </body>
-</html>
+</html>  
+    

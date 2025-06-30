@@ -1,0 +1,52 @@
+body {
+  background-color: #000; /* Black background */
+  color: white;           /* White text */
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+}
+
+/* === Main Heading === */
+h1 {
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 40px;
+  color: #f5f5f5;
+}
+
+/* === Blog Article Styling === */
+article {
+  background-color: #1a1a1a;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+/* Article title */
+article h2 {
+  margin-top: 0;
+  color: #00ffff;
+}
+
+/* Date styling */
+article p:first-of-type {
+  color: #aaa;
+  font-size: 0.9em;
+}
+
+/* === Back to Home Link === */
+a {
+  color: #ff69b4;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #ffd700;
+}

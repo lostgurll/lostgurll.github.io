@@ -1,0 +1,166 @@
+//This is about how we can declare variables and assign string values to them in JavaScript.
+var name = "John Doe";
+var nationality;
+nationality = "American";
+var thanks = "Thank you for your help!";
+alert(thanks);
+
+
+
+
+//This is about assigning numbers to variables in JavaScript.
+var weight = 85; // weight in kg
+var new weight = weight - 10 //weight after 2 months 
+
+
+
+// AN expression made up of just variables and nothing else 
+var num = 5;
+var numtobeadded = 10;
+var newnum = num + numtobeadded; // newnum is 15
+
+
+
+
+//variable name should not start with a number but you can add number as long as it doesnt start wuth it 
+// % is a special character in JavaScript and it is used to find the remainder of a division operation it is called modulus oprator 
+var remainder = 10 % 3; // remainder is 1
+
+
+
+// concatenation is the process of joining two strings together here is an example of concatenation
+var username = "John";
+alert("Hello, " + username + "!"); // This will show "Hello, John!" in an alert box
+var message = "Welcome to the JavaScript tutorial.";
+var banger = "!";
+alert(message + banger); // This will show "Welcome to the JavaScript tutorial.!" in an alert box
+// You can also use the += operator to concatenate strings
+var greeting = "Hello, ";
+greeting += "world!"; // greeting is now "Hello, world!"
+
+
+//prompts
+a prompt is a dialog box that asks the user for input.
+var userName = prompt("Please enter your name:");
+//in a prompt we can specify second parameter which is the default value that appears in the input field when the prompt is displayed
+var question = "What is your species?";
+var default answer = "human";
+var spec = prompt(question, default_answer);
+//if the user clicks cancel the prompt will return null
+//if the user response is a number it comes as a string so we need to convert it to a number
+
+
+
+//if statements
+//if statements are used to execute a block of code if a condition is true
+if x = prompt("where does the unicorn live ?");
+if (x === "in your dreams") {
+    alert("You are right!");
+}
+//=== is used whwn we are testing a variable for a value its a comparison operator that checks for both value and type
+//!== is opposite of === it checks if the value is not equal to the other value 
+if(yourticketnumber !== 12345) {
+    alert("better luck next time!");
+}
+
+
+//if else and else if staments
+//if else statements are used to execute a block of code if a condition is true and another
+
+var x = prompt("What is my favorite color?");
+if (x === "blue") {
+    alert("You are correct!");
+}
+if (x !== "blue") {
+    alert("You are wrong!");
+}
+var x = prompt("What is my favorite color?");
+if (x === "blue") {
+    alert("You are correct!");
+} 
+else {
+    alert("You are wrong!");   
+}
+//else if statements are used to execute a block of code if a condition is true and another condition is false
+//above written both codes are same but the second one is more concise 
+//else if statement is used when all tests above have failed and we want to test another condition 
+
+
+//sets of conditions
+if (weight > 300 && time < 6 && age > 18) {
+    alert("You are eligible for the ride!");
+}
+else {
+    alert ("come back later!");
+} 
+//&& and statement is used to check if all staements are true all conditions must be true for the code block to execute
+//|| or statement is used to check if at least one condition is true if any of the conditions is true the code block will execute
+
+if (SAT > avg || GPA > 3.5 || extracurriculars == true) {
+    alert("You are eligible for the scholarship!");
+}
+else {
+    alert("You are not eligible for the scholarship!");
+}
+//if statements can be nested inside each other
+if (age > 18) {
+    if (weight > 300) {
+        alert("You are eligible for the ride!");
+    } else {
+        alert("You are not eligible for the ride!");
+    }
+}
+//this is not a good practice as it makes the code hard to read and understand
+//instead we can use else if statements to make the code more readable      
+
+
+//and and or statements can be used together to check multiple conditions , we use parentheses to group conditions together
+
+//if statements nested 
+
+if ( c === d ) {
+    if ( x === y) {
+    }
+    else if {
+        alert("x is not equal to y");
+    }
+
+
+
+//an array is a special type of variable that can hold multiple values in a single variable
+var cities = ["New York", "Los Angeles", "Chicago", "Houston", "Phoenix"];
+//we can access the values in an array using the index of the value java script automatically assigns an index to each value in the array starting from 0
+alert(welcome to " + cities[0] + "!"); 
+     //This will show "Welcome to New York!" in an alert box
+
+
+//adding and removing values from an array
+cities.push("San Diego"); // adds "San Diego" to the end of the array
+cities.pop(); // removes the last value from the array
+cities.unshift("San Francisco"); // adds "San Francisco" to the beginning of the array
+cities.shift(); // removes the first value from the array   
+//slice method is used to create a new array from a portion of the original array
+var newCities = cities.slice(1, 3); // creates a new array with the values from index 1 to index 2 (not including index 3)
+alert(newCities);  
+// if we do not specify the second parameter it will take all the values from the first index to the end of the array
+var newCities = cities.slice(1); // creates a new array with the values from index 1 to the end of the array
+alert(newCities); // This will show the new array
+
+// splice method is used to add or remove values from an array at a specific index
+var names = [ "anjali", "sara", "john", "doe"];
+names.splice(index , how many values to removeoptional, value to add, ...); // adds or removes values from the array at the specified index
+names.splice(2, 1, "jane"); // removes the value at index 2 and adds "jane" at that index
+alert(names); // This will show the updated array with "jane" at index 2 
+
+//for loop is used to iterate over an array and perform an action on each value in the array
+var eligiblecities = ["delhi", "mumbai", "bangalore", "chennai"];
+for (var i = 0; i < eligiblecities.length; i++) {
+    if (city to check === eligiblecities[i]) {
+        alert("You are eligible for the scholarship in " + eligiblecities[i] + "!");
+        break; // exits the loop if the condition is met
+    }
+}
+
+
+
+    
